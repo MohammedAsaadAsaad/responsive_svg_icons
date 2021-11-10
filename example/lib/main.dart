@@ -44,16 +44,21 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            LayoutBuilder(builder: (c, cs) {
-              double size = min(cs.maxWidth, cs.maxHeight);
-              return SvgIcon(
-                size: size,
-                icon: ResponsiveSvgIcons.cart,
-              );
-            }),
-            IconTheme(
-                data: const IconThemeData(size: 250),
-                child: SvgIcon(icon: ResponsiveSvgIcons.cart)),
+            SvgIcon(
+              size: 30,
+              icon: ResponsiveSvgIcons.battery,
+            ),
+            SvgIcon(
+              size: 100,
+              icon: ResponsiveSvgIcons.battery,
+            ),
+            SvgIcon(
+              size: 200,
+              icon: ResponsiveSvgIcons.battery,
+            ),
+            // IconTheme(
+            //     data: const IconThemeData(size: 250),
+            //     child: SvgIcon(icon: ResponsiveSvgIcons.cart)),
           ],
         ),
       ),
